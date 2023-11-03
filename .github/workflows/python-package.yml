@@ -11,6 +11,7 @@ on:
 
 jobs:
   build:
+    name: Python tests
 
     runs-on: [self-hosted, linux]
     strategy:
