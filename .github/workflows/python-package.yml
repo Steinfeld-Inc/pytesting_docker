@@ -40,7 +40,7 @@ jobs:
         pytest
     - name: Test if running on server
       run: |
-        ping -c5 google.com
+        ping -c5 192.168.1.100
 
       
           
