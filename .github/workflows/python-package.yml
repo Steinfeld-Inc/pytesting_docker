@@ -38,4 +38,9 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Test if running on server
+      run: |
+        ls
+
+      
           
