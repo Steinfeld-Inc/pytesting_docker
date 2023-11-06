@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: reitermarkus/automerge@v2
         with:
-          token: ${{ secrets.Test }}
+          token: ${{ secrets.MY_SECRET }}
           merge-method: rebase
           do-not-merge-labels: never-merge
           pull-request: ${{ github.event.inputs.pull-request }}
