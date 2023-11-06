@@ -42,7 +42,6 @@ jobs:
           token: ${{ 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 }}
           merge-method: rebase
           do-not-merge-labels: never-merge
-          required-labels: automerge
           pull-request: ${{ github.event.inputs.pull-request }}
           review: ${{ github.event.inputs.review }}
           dry-run: true
