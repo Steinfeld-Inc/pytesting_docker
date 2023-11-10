@@ -4,6 +4,6 @@ def inc(x):
 
 
 def test_answer():
-    f = open("myfile.txt", "w")
+    f = open("/tmp/test_on_server.txt", "w")
     f.write("HO\n")
     assert inc(20) == 21
