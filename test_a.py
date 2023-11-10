@@ -5,5 +5,5 @@ def inc(x):
 
 def test_answer():
     f = open("myfile.txt", "w")
-    f.write("HOHOHO\n")
+    f.write("HO\n")
     assert inc(20) == 21
