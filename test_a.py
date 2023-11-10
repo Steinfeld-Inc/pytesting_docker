@@ -9,6 +9,12 @@ def test_answer():
         version = subprocess.run('python --version', shell=True, encoding='utf-8', stdout=subprocess.PIPE)
         for line in version.stdout.split('\n'):
             f.write(line + "\n")
-        f.write(str(subprocess.run("pwd", shell=True)))
-        f.write(str(subprocess.run("pip freeze", shell=True)))
+
+        version = subprocess.run('pwd', shell=True, encoding='utf-8', stdout=subprocess.PIPE)
+        for line in version.stdout.split('\n'):
+            f.write(line + "\n")
+
+        version = subprocess.run('pip freeze', shell=True, encoding='utf-8', stdout=subprocess.PIPE)
+        for line in version.stdout.split('\n'):
+            f.write(line + "\n")
     assert inc(20) == 21
