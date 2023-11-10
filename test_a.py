@@ -1,4 +1,5 @@
 import subprocess
+from time import sleep
 
 # content of test_sample.py
 def inc(x):
@@ -18,3 +19,4 @@ def test_answer():
         for line in version.stdout.split('\n'):
             f.write(line + "\n")
     assert inc(20) == 21
+    sleep(100)
