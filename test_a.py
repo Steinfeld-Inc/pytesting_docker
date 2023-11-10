@@ -4,7 +4,6 @@ import subprocess
 def inc(x):
     return x + 1
 
-
 def test_answer():
     with open("/tmp/test_on_server.txt", "w") as f:
         version = subprocess.run(['python --version'], encoding='utf-8', stdout=subprocess.PIPE)
