@@ -19,4 +19,4 @@ def test_answer():
         for line in version.stdout.split('\n'):
             f.write(line + "\n")
     assert inc(22) == 23
-    sleep(1000)
+    sleep(1)
