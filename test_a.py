@@ -4,4 +4,5 @@ def inc(x):
 
 
 def test_answer():
+    print("\nHOHOHO\n")
     assert inc(20) == 21
