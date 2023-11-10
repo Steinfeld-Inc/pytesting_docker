@@ -1,5 +1,4 @@
 import subprocess
-from time import sleep
 
 # content of test_sample.py
 def inc(x):
