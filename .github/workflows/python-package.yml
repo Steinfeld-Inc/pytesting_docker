@@ -57,13 +57,7 @@ jobs:
     - name: Cleanup Python
       run: |
         pwd
-        cd /
-        cd home/devel
-        cd actions-runner/
-        cd _work
-        cd _tool
-        rm -r Python
-      #rm -rf home/devel/actions-runner/_work/_tool/Python
+        rm -r /home/devel/actions-runner/_work/_tool/Python
 
       
           
