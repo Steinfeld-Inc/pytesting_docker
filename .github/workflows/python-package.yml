@@ -14,13 +14,15 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: alpine:3.10
+      image: composer:latest
     strategy:
       fail-fast: false
       matrix:
         python-version: ["3.12"]
 
     steps:
+    - name: Installing Composer
+      run: composer
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
