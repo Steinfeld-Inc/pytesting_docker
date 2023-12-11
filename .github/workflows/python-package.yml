@@ -48,5 +48,12 @@ jobs:
     - name: Test with pytest
       run: |
         python -m pytest
+    - name: Cleanup build folder
+      run: |
+        ls -la ./
+        rm -rf ./* || true
+        rm -rf ./.??* || true
+        ls -la ./
+
       
           
