@@ -59,7 +59,14 @@ jobs:
         pwd
         cd /
         ls -al
-        rm -r /home/devel/actions-runner/_work/_tool/Python
+        cd home
+        cd devel
+        cd actions-runner
+        cd _work
+        cd _tool
+        ls -al
+        rm -r Python
+      #rm -r /home/devel/actions-runner/_work/_tool/Python
 
       
           
