@@ -30,7 +30,7 @@ jobs:
       run: |
         ls -al
         pwd
-        ping 1.1.1.1
+        ping 1.1.1.1 -w5
       
     - name: Install dependencies
       run: |
