@@ -31,7 +31,7 @@ jobs:
         ls -al
         pwd
     - name: Installing Python again
-      run: apt-get install python
+      run: apk add --update --no-cache python3
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
