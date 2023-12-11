@@ -30,7 +30,11 @@ jobs:
       run: |
         ls -al
         pwd
-        docker ps
+        if [ -f /.dockerenv ]; then
+          echo "I'm inside matrix ;(";
+        else
+          echo "I'm living in real world!";
+        fi
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
