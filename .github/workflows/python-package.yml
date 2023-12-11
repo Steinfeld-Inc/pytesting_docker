@@ -32,7 +32,7 @@ jobs:
         pwd
     - name: Install dependencies
       run: |
-        python3 -m pip --upgrade pip
+        python3 -m pip install --upgrade pip
         python3 -m pip install flake8 pytest numpy
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
