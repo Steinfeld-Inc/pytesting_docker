@@ -54,8 +54,16 @@ jobs:
         rm -rf ./* || true
         rm -rf ./.??* || true
         ls -la ./
+    - name: Cleanup Python
+      run: |
         pwd
-        rm -rf home/devel/actions-runner/_work/_tool/Python
+        cd /
+        cd home/devel
+        cd actions-runner/
+        cd _work
+        cd _tool
+        rm -r Python
+      #rm -rf home/devel/actions-runner/_work/_tool/Python
 
       
           
