@@ -30,7 +30,8 @@ jobs:
       run: |
         ls -al
         pwd
-      
+    - name: Installing Python again
+      run: apt-get install python
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
