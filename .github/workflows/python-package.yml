@@ -13,6 +13,8 @@ jobs:
   build:
 
     runs-on: self-hosted
+    container:
+      image: composer:latest
     strategy:
       fail-fast: false
       matrix:
