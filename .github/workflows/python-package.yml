@@ -54,6 +54,7 @@ jobs:
         rm -rf ./* || true
         rm -rf ./.??* || true
         ls -la ./
+        pwd
         rm -rf home/devel/actions-runner/_work/_tool/Python
 
       
