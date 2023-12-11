@@ -40,10 +40,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Test if running on server
-      run: |
-        cd /
-        cat /tmp/test_on_server.txt
-
+        ls -al
       
           
