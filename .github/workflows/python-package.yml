@@ -34,7 +34,6 @@ jobs:
           echo "I'm living in real world!";
         fi
         pwd
-        lsb_release -a
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
