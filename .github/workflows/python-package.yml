@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     container:
       image: ubuntu:22.04
     strategy:
@@ -54,19 +54,19 @@ jobs:
         rm -rf ./* || true
         rm -rf ./.??* || true
         ls -la ./
-    - name: Cleanup Python
-      run: |
-        pwd
-        cd /
-        cd home
-        ls -al
-        cd devel
-        ls-al
-        cd actions-runner
-        cd _work
-        cd _tool
-        ls -al
-        rm -r Python
+   # - name: Cleanup Python
+      #run: |
+      #  pwd
+      #  cd /
+      #  cd home
+      #  ls -al
+      #  cd devel
+      #  ls-al
+      #  cd actions-runner
+      #  cd _work
+       # cd _tool
+      #  ls -al
+      #  rm -r Python
       #rm -r /home/devel/actions-runner/_work/_tool/Python
 
       
